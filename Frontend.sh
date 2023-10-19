@@ -6,3 +6,11 @@
 
 # Install Nginx
 
+dnf install nginx -y
+
+# Start & Enable Nginx service
+
+systemctl enable nginx
+systemctl start nginx
+
+# Remove the default content that web server is serving
