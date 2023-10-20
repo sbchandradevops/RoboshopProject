@@ -6,7 +6,7 @@
 
 # Install Nginx
 
-
+script_location=$(pwd)
 
 dnf install nginx -y
 
@@ -30,7 +30,7 @@ unzip /tmp/frontend.zip
 
 #Create Nginx Reverse Proxy Configuration
 
-cp /Files/nginx-roboshop.conf  /etc/nginx/default.d/roboshop.conf
+cp $(script_location)/Files/nginx-roboshop.conf  /etc/nginx/default.d/roboshop.conf
 
 #Restart Nginx Service to load the changes of the configuration.
 
