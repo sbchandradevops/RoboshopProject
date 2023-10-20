@@ -10,11 +10,6 @@ script_location=$(pwd)
 
 dnf install nginx -y
 
-# Start & Enable Nginx service
-
-systemctl enable nginx
-systemctl start nginx
-
 # Remove the default content that web server is serving
 
 rm -rf /usr/share/nginx/html/*
@@ -34,6 +29,6 @@ cp ${script_location}/Files/nginx-roboshop.conf  /etc/nginx/default.d/roboshop.c
 
 #Restart Nginx Service to load the changes of the configuration.
 
+systemctl enable nginx
 systemctl restart nginx
-
 
