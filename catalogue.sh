@@ -28,3 +28,5 @@ cp ${script_location}/Files/mongodb.repo /etc/yum.repos.d/mongo.repo
 
 dnf install mongodb-org-shell -y
 
+mongo --host localhost </app/schema/catalogue.js
+
