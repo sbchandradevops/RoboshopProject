@@ -14,3 +14,6 @@ systemctl enable nginx
 systemctl start nginx
 
 # Remove the default content that web server is serving
+
+rm -rf /usr/share/nginx/html/*
+
