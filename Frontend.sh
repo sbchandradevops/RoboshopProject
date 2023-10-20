@@ -6,6 +6,8 @@
 
 # Install Nginx
 
+
+
 dnf install nginx -y
 
 # Start & Enable Nginx service
@@ -20,4 +22,18 @@ rm -rf /usr/share/nginx/html/*
 #Download the frontend content
 
 curl -o /tmp/frontend.zip https://roboshop-artifacts.s3.amazonaws.com/frontend.zip
+
+#Extract the frontend content
+
+cd /usr/share/nginx/html
+unzip /tmp/frontend.zip
+
+#Create Nginx Reverse Proxy Configuration
+
+cp /Files/nginx-roboshop.conf  /etc/nginx/default.d/roboshop.conf
+
+#Restart Nginx Service to load the changes of the configuration.
+
+systemctl restart nginx
+
 
