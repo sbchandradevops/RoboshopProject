@@ -6,6 +6,7 @@ cp ${script_location}/files/mongo.repo /etc/yum.repos.d/mongo.repo
 
 dnf install mongodb-org -y
 
+
 #Start & Enable MongoDB Service
 
 systemctl enable mongod
@@ -17,4 +18,5 @@ systemctl start mongod
 
 #Restart the service to make the changes effected.
 
-systemctl restart mongod
+#systemctl restart mongod
+
