@@ -2,42 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea67617b-9aba-45de-b0d9-efe8686dc66e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Files/catalogue.service" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Files/mongodb.repo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Files/nginx-roboshop.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalogue.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/auto-complete.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/empty.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eum.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/C3P0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/EVE-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/HAL-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/HHGTTG.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/K9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/PB-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/R2D2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/RD-10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ROB-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/STAN-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/STNG.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/placeholder.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/auto-complete.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/controller.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/graph.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/instana_icon_square.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/stan.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongodb.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/search.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shipping.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/splash.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
