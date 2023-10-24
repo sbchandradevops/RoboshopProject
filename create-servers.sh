@@ -5,8 +5,8 @@ ZONE_ID="Z0927899ZBM4L1UQ4QXM"
 DOMAIN="sustainableforexea.shop"
 SG_NAME="Blue-Vpc-SG"
 env=dev
-VPC_ID="<your_vpc_id>"          # Replace with your VPC ID
-SUBNET_ID="<your_subnet_id>"    # Replace with your Subnet ID
+VPC_ID="vpc-0a9a921460f8a224d"          # Replace with your VPC ID
+SUBNET_ID="subnet-044c3d17cb6298721"    # Replace with your Subnet ID
 #############################
 
 create_ec2() {
