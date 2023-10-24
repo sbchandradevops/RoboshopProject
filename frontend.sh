@@ -6,8 +6,6 @@
 
 script_location=$(pwd)
 
-exit
-
 dnf install nginx -y
 
 # Start & Enable Nginx service
