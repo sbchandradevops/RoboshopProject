@@ -1,6 +1,6 @@
 #!/bin/bash
 
-##### Change these values ###
+###### Change these values ###
 ZONE_ID="Z0927899ZBM4L1UQ4QXM"
 DOMAIN="sustainableforexea.shop"
 SG_NAME="Blue-Vpc-SG"
