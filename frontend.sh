@@ -4,6 +4,8 @@
 # Developer has chosen Nginx as a web server and thus we will install Nginx Web Server.
 # Install Nginx
 
+script_location= $(pwd)
+
 dnf install nginx -y
 
 # Start & Enable Nginx service
@@ -27,6 +29,8 @@ cd /usr/share/nginx/html
 unzip /tmp/frontend.zip
 
 # Create Nginx Reverse Proxy Configuration.
+
+cp ${script_location}/files/nginx-roboshop.conf /etc/nginx/default.d/roboshop.conf
 
 # Restart Nginx Service to load the changes of the configuration.
 
