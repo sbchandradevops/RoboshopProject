@@ -4,7 +4,7 @@
 # Developer has chosen Nginx as a web server and thus we will install Nginx Web Server.
 # Install Nginx
 
-script_location= $(pwd)
+script_location=$(pwd)
 
 exit
 
