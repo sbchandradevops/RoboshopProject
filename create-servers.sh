@@ -1,13 +1,13 @@
 #!/bin/bash
 
-###### Change these values ###
+##### Change these values ###
 ZONE_ID="Z0927899ZBM4L1UQ4QXM"
 DOMAIN="sustainableforexea.shop"
 SG_NAME="Blue-Vpc-SG"
 env=dev
+VPC_ID="vpc-0a9a921460f8a224d"          # Replace with your VPC ID
+SUBNET_ID="subnet-044c3d17cb6298721"    # Replace with your Subnet ID
 #############################
-
-
 
 create_ec2() {
   PRIVATE_IP=$(aws ec2 run-instances \
@@ -16,6 +16,7 @@ create_ec2() {
       --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=${COMPONENT}}, {Key=Monitor,Value=yes}]" "ResourceType=spot-instances-request,Tags=[{Key=Name,Value=${COMPONENT}}]"  \
       --instance-market-options "MarketType=spot,SpotOptions={SpotInstanceType=persistent,InstanceInterruptionBehavior=stop}"\
       --security-group-ids ${SGID} \
+      --subnet-id ${SUBNET_ID}    # Specify the Subnet
       | jq '.Instances[].PrivateIpAddress' | sed -e 's/"//g')
 
   sed -e "s/IPADDRESS/${PRIVATE_IP}/" -e "s/COMPONENT/${COMPONENT}/" -e "s/DOMAIN/${DOMAIN}/" route53.json >/tmp/record.json
@@ -28,7 +29,6 @@ create_ec2() {
   fi
 }
 
-
 ## Main Program
 AMI_ID=$(aws ec2 describe-images --filters "Name=name,Values=Centos-8-DevOps-Practice" | jq '.Images[].ImageId' | sed -e 's/"//g')
 if [ -z "${AMI_ID}" ]; then
@@ -38,10 +38,9 @@ fi
 
 SGID=$(aws ec2 describe-security-groups --filters Name=group-name,Values=${SG_NAME} | jq  '.SecurityGroups[].GroupId' | sed -e 's/"//g')
 if [ -z "${SGID}" ]; then
-  echo "Given Security Group does not exit"
+  echo "Given Security Group does not exist"
   exit 1
 fi
-
 
 for component in catalogue cart user shipping payment frontend mongodb mysql rabbitmq redis dispatch; do
   COMPONENT="${component}-${env}"
