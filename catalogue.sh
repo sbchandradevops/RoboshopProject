@@ -71,7 +71,7 @@ systemctl start catalogue
 # To have it installed we can setup MongoDB repo and install mongodb-client
 # /etc/yum.repos.d/mongo.repo
 
-# dnf install mongodb-org-shell -y
+dnf install mongodb-org-shell -y
 
 # Load Schema
 # mongo --host MONGODB-SERVER-IPADDRESS </app/schema/catalogue.js
@@ -79,7 +79,7 @@ systemctl start catalogue
 # You need to update catalogue server ip address in frontend configuration.
 # Configuration file is /etc/nginx/default.d/roboshop.conf
 
- mongo --host localgost-IPADDRESS </app/schema/catalogue.js
+mongo --host localgost-IPADDRESS </app/schema/catalogue.js
 
 
 
