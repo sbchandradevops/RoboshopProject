@@ -30,7 +30,7 @@ unzip /tmp/frontend.zip
 
 # Create Nginx Reverse Proxy Configuration.
 
-cp ${script_location}/files/nginx-roboshop.conf /etc/nginx/default.d/roboshop.conf
+cp ${script_location}/Files/nginx-roboshop.conf /etc/nginx/default.d/roboshop.conf
 
 # Restart Nginx Service to load the changes of the configuration.
 
