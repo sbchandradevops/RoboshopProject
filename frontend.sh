@@ -6,35 +6,36 @@
 
 script_location=$(pwd)
 
+echo -e "\e[35m Install nginx\e[0m"
 dnf install nginx -y
 
-# Start & Enable Nginx service
-
-systemctl enable nginx
-
-systemctl start nginx
-
 # Remove the default content that web server is serving.
-
+echo -e "\e[35m Remove nginx old content\e[0m"
 rm -rf /usr/share/nginx/html/*
 
 # Download the frontend content
-
+echo -e "\e[35m Download the frontend content\e[0m"
 curl -o /tmp/frontend.zip https://roboshop-artifacts.s3.amazonaws.com/frontend.zip
 
-# Extract the frontend content.
 
 cd /usr/share/nginx/html
 
+# Extract the frontend content.
+echo -e "\e[35m Extracting frontend content\e[0m"
 unzip /tmp/frontend.zip
 
 # Create Nginx Reverse Proxy Configuration.
 
+echo -e "\e[35m Copy Roboshop nginx config file\e[0m"
 cp ${script_location}/Files/nginx-roboshop.conf /etc/nginx/default.d/roboshop.conf
 
 # Restart Nginx Service to load the changes of the configuration.
 
-systemctl restart nginx
+echo -e "\e[35m enable nginx\e[0m"
+systemctl enable nginx
+
+echo -e "\e[35m Start nginx\e[0m"
+systemctl start nginx
 
 
 

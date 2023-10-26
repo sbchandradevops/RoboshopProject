@@ -32,10 +32,13 @@ useradd roboshop
 # We keep application in one standard location. This is a usual practice that runs in the organization.
 
 # Lets setup an app directory.
-mkdir /app
+mkdir -p /app
 
 # Download the application code to created app directory.
 curl -o /tmp/catalogue.zip https://roboshop-artifacts.s3.amazonaws.com/catalogue.zip
+# Delete the existing if any
+rm -rf /app/*
+
 cd /app
 unzip /tmp/catalogue.zip
 
