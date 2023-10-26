@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ea67617b-9aba-45de-b0d9-efe8686dc66e" name="Changes" comment="Added frontend.sh">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalogue.sh" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend.sh" beforeDir="false" afterPath="$PROJECT_DIR$/frontend.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
